@@ -26,4 +26,18 @@ $("#mobile-menu-button").click(function() {
         $("#mobile-menu-text").text("Menu");
         $("#mobile-menu-icon").attr("src", "assets/images/menu.svg");
     }
+
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize the first carousel
+    new Splide('#image-carousel', {
+        type: 'loop' // You can add additional options here
+    }).mount();
+
+    // Initialize the second carousel
+    new Splide('#second-image-carousel', {
+        type: 'loop' // You can add additional options here
+    }).mount();
+});
+

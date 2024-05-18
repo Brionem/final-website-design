@@ -17,10 +17,7 @@ body {
 .carousel-container {
     position: absolute;
     top: 30%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto; /* Center horizontally */
     width: 80%; /* Adjust width as needed */
     max-width: 800px; /* Set maximum width for the carousel */
     z-index: 1;
@@ -31,7 +28,6 @@ body {
     height: auto; /* Allow the height of the images to adjust automatically */
 }
 
-
 img {
     display: block;
     margin: 0 auto;
@@ -39,7 +35,6 @@ img {
     height: auto;
     object-fit: fill; /* Stretch the image without maintaining aspect ratio */
 }
-
 
 li {
     list-style: none;
@@ -50,11 +45,10 @@ a, button {
     transition: color .5s; 
     text-decoration: none;
     font-size: 18px;
-
 }
 
 a:hover, button.hover {
-    color: white
+    color: white;
 }
 
 nav {
@@ -63,7 +57,7 @@ nav {
     background-image: url("../images/nav.image.png");
     background-size: 120% 300%; /* Stretch the background image to cover the entire nav */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: center ; /* Center the background image */
+    background-position: center; /* Center the background image */
     display: flex; 
     gap: 40px; 
     justify-content: space-between; /* Align items to the left and right */
@@ -84,9 +78,10 @@ button {
 }
 
 .SUBSCRIBED {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    margin-top: 20px; /* Adjust margin-top as needed to add space between the body image and the text */
+    margin-top: 90px; /* Adjust margin-top as needed to add space between the body image and the text */
+    font-size: 50px;
 }
 
 #main-menu {
@@ -94,7 +89,6 @@ button {
     gap: 20px;
     list-style: none; /* Remove default list styles */
 }
-
 
 #main-menu li {
     margin: 0; /* Remove default margin */
@@ -113,7 +107,6 @@ button {
 .buttons {
     display: flex;
     gap: 20px;
-    
 }
 
 .buttons button {
@@ -142,8 +135,7 @@ button {
 }
 
 .dropdown-trigger:hover .dropdown-menu {
- display: block;
-
+    display: block;
 }
 
 #mobile-menu-button {
@@ -157,18 +149,30 @@ button {
 }
 
 #image-carousel {
-       width:500px
+    width: 500px;
 }
 
-.carousel-container {
-    display:flex;
-    justify-content:center;
-    align-items:center; 
+/* Second Carousel Container */
+.second-carousel-container {
+    margin-top: 20px; /* Add space between the first carousel and the second carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
+/* Second Carousel Track */
+#second-image-carousel .splide__track {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+/* Second Carousel Slide */
+#second-image-carousel .splide__slide img {
+    width: 100%; /* Set the width of the carousel images to 100% */
+    height: auto; /* Allow the height of the images to adjust automatically */
+}
 
 @media (max-width: 580px) {
-
     #mobile-menu-button {
         display: block;
     }
