@@ -27,11 +27,11 @@ a:hover, button.hover {
 nav {
     background-color: mediumvioletred;
     background-image: url("../images/nav.image.png");
-    display: flex; 
+    display: ; 
     gap: 40px; 
     justify-content: space-between;
     flex-wrap: wrap; 
-    padding: 50px; 
+    padding: 20px; 
 }
 
   span.logo a {
