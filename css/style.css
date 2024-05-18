@@ -25,20 +25,22 @@ a:hover, button.hover {
 }
 
 nav {
-    background-color: mediumvioletred;
+    background-color: #df302f;
     background-image: url("../images/nav.image.png");
-    background-size: 0% 70%; /* Stretch the background image to cover the entire nav */
+    background-size: 120% 300%; /* Stretch the background image to cover the entire nav */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: center; /* Center the background image */
+    background-position: center ; /* Center the background image */
     display: flex; 
     gap: 40px; 
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    padding: 30px;   
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+    padding: 15px;   
 }
 
-  span.logo a {
+span.logo a {
     color: white;
+    font-weight: bold; /* Make the text bolder */
+    font-size: 30px; /* Increase the font size */
 }
 
 button {
@@ -47,9 +49,47 @@ button {
     font-family: serif;
 }
 
-#main-menu {
 
+#main-menu {
+    display: flex; 
+    gap: 20px;
+    list-style: none; /* Remove default list styles */
 }
+
+
+#main-menu li {
+    margin: 0; /* Remove default margin */
+}
+
+#main-menu a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Set font size */
+}
+
+#main-menu a:hover {
+    color: lightpink;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.buttons button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: #f38b23;
+}
+
 .display-flex {
     display: flex;
     gap: 40px;
