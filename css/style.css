@@ -6,8 +6,51 @@
 body {
     font-size: 18px;
     font-family: "serif";
-    background-color: lightpink;
+    background-color:#fcefe0;;
 }
+
+body {
+    font-size: 18px;
+    font-family: "serif";
+    background-image: url("Images/to/main-opening-image.jpg");
+    background-size: cover; /* Make sure the background image covers the entire body */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center center; /* Center the background image */
+} 
+
+body {
+    /* Your existing body styles */
+    position: relative; /* Ensure the body serves as a positioning reference for the carousel */
+}
+
+                        /*carousel stuff/*
+.carousel-container {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Ensure the carousel is above the body image */
+}
+
+.carousel-container {
+    width: 80%; /* Adjust the width of the carousel container */
+    margin: auto; /* Center the carousel container horizontally */
+}
+
+.splide__slide img {
+    width: 100%; /* Set the width of the carousel images to 100% */
+    height: auto; /* Allow the height of the images to adjust automatically */
+}
+
+
+img {
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100vw; /* Stretch the image horizontally */
+    height: auto; /* Stretch the image vertically */
+    object-fit: fill; /* Stretch the image without maintaining aspect ratio */
+}
+
 li {
     list-style: none;
 }
