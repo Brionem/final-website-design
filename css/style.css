@@ -158,21 +158,24 @@ button {
 .second-carousel-container {
     margin-top: 20px; /* Add space between the first carousel and the second carousel */
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center;
+    width: 20%; /* Adjust width as needed */
+    margin-left: auto; /* Auto margin on left and right to center horizontally */
+    margin-right: auto;
 }
 
 /* Second Carousel Track */
 #second-image-carousel .splide__track {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the carousel horizontally */
+    width: 100%; /* Adjust width as needed */
 }
 
 /* Second Carousel Slide */
 #second-image-carousel .splide__slide img {
     width: 100%; /* Set the width of the carousel images to 100% */
     height: auto; /* Allow the height of the images to adjust automatically */
-}
+} 
+
 
 @media (max-width: 580px) {
     #mobile-menu-button {

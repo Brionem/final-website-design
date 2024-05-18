@@ -39,5 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
     new Splide('#second-image-carousel', {
         type: 'loop' // You can add additional options here
     }).mount();
+    
 });
 

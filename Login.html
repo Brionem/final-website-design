@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="2css/style2.css">
+</head>
+<body>
+    <nav>
+        <span class="logo">
+            <a href="index.html">InkSplash</a>
+        </span>
+        <menu id="main-menu" class="display-none-mobile display-flex">
+            <li>
+                <a href="">COMICS</a>
+            </li>
+            <li>
+                <a href="">TEAM</a>
+            </li>
+            <li>
+                <a href="">STORE</a>
+            </li>
+        </menu>
+
+        <span class="buttons">
+            <!-- Anchor tag wrapping the button for login -->
+            <a href="login.html">
+                <button>Login</button>
+            </a>
+            <button>Publish</button>
+        </span>
+
+        
+    </nav>
+
+    <div class="profile">
+        <div class="username">USERNAME</div>
+        <div class="box">
+            <input type="text" placeholder="Type here">
+            <button class="submit-btn" onclick="reloadPage()">&#10003;</button>
+        </div>
+        <!-- Second text and box -->
+        <div class="username">SECOND USERNAME</div>
+        <div class="box">
+            <input type="text" placeholder="Type here">
+            <button class="submit-btn" onclick="reloadPage()">&#10003;</button>
+        </div>
+    </div>
+
+    <script>
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>

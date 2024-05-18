@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcefe0;
+    font-size: 18px;
+    font-family: "serif";
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Take up the full viewport height */
+}
+
+.username {
+    font-size: 25px; /* Increase font size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjust margin bottom */
+}
+
+.box {
+    position: relative;
+    width: 500px; /* Adjust width */
+    height: 50px; /* Adjust height */
+    background-color: #fff;
+    border: 2px solid #df302f;
+    text-align: center;
+    line-height: 100px; /* Vertically center the text */
+    font-size: 24px; /* Increase font size */
+    margin-bottom: 20px; /* Adjust margin between the boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 90%;
+    height: 90%;
+    font-size: inherit;
+    padding: 0 10px;
+}
+
+.submit-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px; /* Increase font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a, button {
+    color: lightpink;
+    transition: color .5s; 
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    color: white;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #df302f;
+    margin-bottom: 20px;
+    background-image: url("../images/nav.image.png");
+    background-size: 120% 300%; /* Stretch the background image to cover the entire nav */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+    display: flex; 
+    gap: 40px; 
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+    padding: 15px;  
+}
+
+span.logo a {
+    color: white;
+    font-weight: bold; /* Make the text bolder */
+    font-size: 30px; /* Increase the font size */
+}
+
+button {
+    background-color: transparent;
+    border: 0px;
+    font-family: serif;
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: #f38b23;
+}
+
+.SUBSCRIBED {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 90px; /* Adjust margin-top as needed to add space between the body image and the text */
+    font-size: 50px;
+}
+
+.display-flex {
+    display: flex;
+    gap: 40px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: mediumvioletred; 
+    padding: 5px;
+    display: none;
+}

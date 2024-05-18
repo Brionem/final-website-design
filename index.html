@@ -25,7 +25,10 @@
 
 
         <span class="buttons">
-            <button>Login</button>
+            <!-- Anchor tag wrapping the button for login -->
+            <a href="login.html">
+                <button>Login</button>
+            </a>
             <button>Publish</button>
         </span>
         <button id="mobile-menu-button">
@@ -117,5 +120,14 @@
         } ).mount();
         } );
     </script>
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '#second-image-carousel', {
+    type: 'loop'
+    } ).mount();
+    } );
+</script>
 </body>
 </html>
+
