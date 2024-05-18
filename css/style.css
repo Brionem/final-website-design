@@ -27,14 +27,14 @@ a:hover, button.hover {
 nav {
     background-color: mediumvioletred;
     background-image: url("../images/nav.image.png");
-    background-size: contain; /* Adjust the size of the background image */
+    background-size: 70% 100%; /* Stretch the background image to cover the entire nav */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
     display: flex; 
     gap: 40px; 
     justify-content: space-between;
     flex-wrap: wrap; 
-    padding: 30px;  
+    padding: 30px;   
 }
 
   span.logo a {
