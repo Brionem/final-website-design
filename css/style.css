@@ -25,7 +25,6 @@ a:hover, button.hover {
 }
 
 nav {
-    background-color: mediumvioletred;
     background-image: url("../images/nav.image.png");
     display: flex; 
     gap: 40px; 
