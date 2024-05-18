@@ -17,6 +17,8 @@ body {
 .carousel-container {
     position: absolute;
     top: 30%;
+    left: 25%; /* Adjust the left position as needed */
+    right: 0;
     margin: auto; /* Center horizontally */
     width: 80%; /* Adjust width as needed */
     max-width: 800px; /* Set maximum width for the carousel */
