@@ -28,7 +28,7 @@ body {
     position: absolute;
     top: 30%;
     left: 0;
-    width: 100%;
+    width: 90%;
     z-index: 1; /* Ensure the carousel is above the body image */
 }
 
