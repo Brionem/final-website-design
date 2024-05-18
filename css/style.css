@@ -27,7 +27,7 @@ a:hover, button.hover {
 nav {
     background-color: mediumvioletred;
     background-image: url("../images/nav.image.png");
-    background-size: 40% 70%; /* Stretch the background image to cover the entire nav */
+    background-size: 0% 70%; /* Stretch the background image to cover the entire nav */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
     display: flex; 
