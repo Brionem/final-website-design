@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: "serif";
+    background-color: lightpink;
+}
+li {
+    list-style: none;
+}
+
+a, button {
+    color: lightpink;
+    transition: color .5s; 
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+a:hover, button.hover {
+    color: white
+}
+
+nav {
+    background-color: mediumvioletred;
+    background-image: url("../images/cake1.jpg");
+    display: flex; 
+    gap: 40px; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    padding: 50px; 
+}
+
+  span.logo a {
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: 0px;
+    font-family: serif;
+}
+
+#main-menu {
+
+}
+.display-flex {
+    display: flex;
+    gap: 40px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: mediumvioletred; 
+    padding: 5px;
+    display: none;
+}
+
+.dropdown-trigger:hover .dropdown-menu {
+ display: block;
+
+}
+
+#mobile-menu-button {
+    display: none;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+#image-carousel {
+       width:500px
+}
+
+.carousel-container {
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+
+
+@media (max-width: 580px) {
+
+    #mobile-menu-button {
+        display: block;
+    }
+
+    .display-none-mobile {
+        display: none;
+    }
+
+    #main-menu {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        display: block; 
+        position: relative; 
+    }
+}
+
