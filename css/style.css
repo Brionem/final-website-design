@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -6,35 +6,24 @@
 body {
     font-size: 18px;
     font-family: "serif";
-    background-color:#fcefe0;;
-}
-
-body {
-    font-size: 18px;
-    font-family: "serif";
+    background-color: #fcefe0;
+    /* Set background image */
     background-image: url("Images/to/main-opening-image.jpg");
-    background-size: cover; /* Make sure the background image covers the entire body */
+    background-size: cover; /* Set background size to cover the entire body */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: center center; /* Center the background image */
+    background-position: center center; /* Set background position to center */
 } 
 
-body {
-    /* Your existing body styles */
-    position: relative; /* Ensure the body serves as a positioning reference for the carousel */
-}
-
-                        /*carousel stuff/*
 .carousel-container {
     position: absolute;
     top: 30%;
     left: 0;
-    width: 90%;
-    z-index: 1; /* Ensure the carousel is above the body image */
-}
-
-.carousel-container {
-    width: 80%; /* Adjust the width of the carousel container */
-    margin: auto; /* Center the carousel container horizontally */
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set maximum width for the carousel */
+    z-index: 1;
 }
 
 .splide__slide img {
@@ -44,12 +33,13 @@ body {
 
 
 img {
-    display: block; /* Ensure the image is a block element */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 100vw; /* Stretch the image horizontally */
-    height: auto; /* Stretch the image vertically */
+    display: block;
+    margin: 0 auto;
+    width: 100vw; /* Stretch the image horizontally to cover the viewport */
+    height: auto;
     object-fit: fill; /* Stretch the image without maintaining aspect ratio */
 }
+
 
 li {
     list-style: none;
@@ -69,6 +59,7 @@ a:hover, button.hover {
 
 nav {
     background-color: #df302f;
+    margin-bottom: 20px;
     background-image: url("../images/nav.image.png");
     background-size: 120% 300%; /* Stretch the background image to cover the entire nav */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
@@ -92,6 +83,11 @@ button {
     font-family: serif;
 }
 
+.SUBSCRIBED {
+    color: white;
+    text-align: center;
+    margin-top: 20px; /* Adjust margin-top as needed to add space between the body image and the text */
+}
 
 #main-menu {
     display: flex; 
@@ -155,9 +151,9 @@ button {
 }
 
 .splide__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    width: 80%;
+    height: 70%;
+    object-fit: fill; 
 }
 
 #image-carousel {
