@@ -16,14 +16,40 @@ body {
 
 .carousel-container {
     position: absolute;
-    top: 30%;
-    left: 25%; /* Adjust the left position as needed */
-    right: 0;
+    top: 18%;
+    left: 11%; /* Adjust the left position as needed */
+    right: 10%;
     margin: auto; /* Center horizontally */
-    width: 80%; /* Adjust width as needed */
-    max-width: 800px; /* Set maximum width for the carousel */
+    width: 58%; /* Adjust width as needed */
+    max-width: 1200px; /* Set maximum width for the carousel */
     z-index: 1;
 }
+
+.carousel-container .splide__pagination {
+    position: absolute;
+    bottom: 156px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    gap: 10px; /* Adjust the gap between dots */
+}
+
+.carousel-container .splide__pagination .splide__pagination__page:not(.splide__pagination__page--active) {
+    background-color: black !important; /* Set the background color to black */
+    width: 10px !important; /* Adjust width of the dots */
+    height: 10px !important; /* Adjust height of the dots */
+    border-radius: 50% !important; /* Make the dots circular */
+}
+
+/* Style for active pagination dot */
+.carousel-container .splide__pagination .splide__pagination__page.splide__pagination__page--active {
+    background-color: #df302f !important; /* Set the background color to red */
+    width: 12px !important; 
+    height: 12px !important; 
+    border-radius: 50% !important;
+}
+
 
 .splide__slide img {
     width: 100%; /* Set the width of the carousel images to 100% */
@@ -151,7 +177,7 @@ button {
 }
 
 #image-carousel {
-    width: 500px;
+      width: 100%; /* Set width to 100% */
 }
 
 /* Second Carousel Container */
