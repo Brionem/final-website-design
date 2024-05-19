@@ -17,39 +17,111 @@ body {
 .carousel-container {
     position: absolute;
     top: 18%;
-    left: 11%; /* Adjust the left position as needed */
-    right: 10%;
-    margin: auto; /* Center horizontally */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
     width: 58%; /* Adjust width as needed */
     max-width: 1200px; /* Set maximum width for the carousel */
     z-index: 1;
+    margin-bottom: 3px; /* Reduce the spacing between carousel containers */
 }
 
+/* First Carousel Pagination */
 .carousel-container .splide__pagination {
     position: absolute;
-    bottom: 156px; /* Adjust the distance from the bottom as needed */
+    bottom: 151px; /* Adjust the distance from the bottom as needed */
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 3; /* Increase the z-index */
     display: flex;
     gap: 10px; /* Adjust the gap between dots */
 }
 
-.carousel-container .splide__pagination .splide__pagination__page:not(.splide__pagination__page--active) {
+/* Second Carousel Pagination */
+.second-carousel-container .splide__pagination {
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* Increase the z-index */
+    display: flex;
+    gap: 10px; /* Adjust the gap between dots */
+    margin: auto; /* Center horizontally */
+}
+
+/* Third Carousel Pagination */
+.third-carousel-container .splide__pagination {
+    position: absolute;
+    bottom: 1120px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* Increase the z-index */
+    display: flex;
+    gap: 10px; /* Adjust the gap between dots */
+    margin: auto; /* Center horizontally */
+}
+
+/* Fourth Carousel Pagination */
+.fourth-carousel-container .splide__pagination {
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* Increase the z-index */
+    display: flex;
+    gap: 10px; /* Adjust the gap between dots */
+    margin: auto; /* Center horizontally */
+}
+
+/* Third Carousel Arrows */
+.third-carousel-container .splide__arrow {
+    background-color: rgba(255, 255, 255, 0.5); /* Change background color */
+    width: 40px; /* Adjust arrow width */
+    height: 40px; /* Adjust arrow height */
+    border-radius: 50%; /* Make the arrows circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Position the arrows absolutely */
+    top: 20%; /* Position the arrows closer to the top of their container */
+    transform: translateY(-50%); /* Center the arrows vertically */
+}
+
+/* Style for previous arrow */
+.third-carousel-container .splide__arrow--prev {
+    left: 5px; /* Adjust left position of the arrow */
+}
+
+/* Style for next arrow */
+.third-carousel-container .splide__arrow--next {
+    right: 5px; /* Adjust right position of the arrow */
+}
+
+/* Fourth Carousel Pagination */
+.fourth-carousel-container .splide__pagination {
+    position: absolute;
+    bottom: 5px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* Increase the z-index */
+    display: flex;
+    gap: 10px; /* Adjust the gap between dots */
+    margin: auto; /* Center horizontally */
+}
+
+/* Styling for pagination dots */
+.carousel-container .splide__pagination .splide__pagination__page:not(.splide__pagination__page--active),
+.second-carousel-container .splide__pagination .splide__pagination__page:not(.splide__pagination__page--active),
+.third-carousel-container .splide__pagination .splide__pagination__page:not(.splide__pagination__page--active),
+.fourth-carousel-container .splide__pagination .splide__pagination__page:not(.splide__pagination__page--active) {
     background-color: black !important; /* Set the background color to black */
     width: 10px !important; /* Adjust width of the dots */
     height: 10px !important; /* Adjust height of the dots */
     border-radius: 50% !important; /* Make the dots circular */
-}
-
-/* Style for active pagination dot */
-.carousel-container .splide__pagination .splide__pagination__page.splide__pagination__page--active {
     background-color: #df302f !important; /* Set the background color to red */
     width: 12px !important; 
     height: 12px !important; 
     border-radius: 50% !important;
 }
-
 
 .splide__slide img {
     width: 100%; /* Set the width of the carousel images to 100% */
@@ -180,88 +252,24 @@ button {
       width: 100%; /* Set width to 100% */
 }
 
-/* Second Carousel Container */
-.second-carousel-container {
-    margin-top: 20px; /* Add space between the first carousel and the second carousel */
-    display: flex;
-    justify-content: center; /* Center the carousel horizontally */
-    align-items: center;
-    width: 20%; /* Adjust width as needed */
-    margin-left: auto; /* Auto margin on left and right to center horizontally */
-    margin-right: auto;
-}
-
-/* Second Carousel Track */
-#second-image-carousel .splide__track {
-    width: 100%; /* Adjust width as needed */
-}
-
-/* Second Carousel Slide */
-#second-image-carousel .splide__slide img {
-    width: 100%; /* Set the width of the carousel images to 100% */
-    height: auto; /* Allow the height of the images to adjust automatically */
-} 
-
-
-.third-carousel-container {
-    margin-top: 20px; /* Add space between the first carousel and the second carousel */
-    display: flex;
-    justify-content: center; /* Center the carousel horizontally */
-    align-items: center;
-    width: 20%; /* Adjust width as needed */
-    margin-left: auto; /* Auto margin on left and right to center horizontally */
-    margin-right: auto;
-}
-
-#third-image-carousel .splide__track {
-    width: 100%; /* Adjust width as needed */
-}
-
-#third-image-carousel .splide__slide img {
-    width: 100%; /* Set the width of the carousel images to 100% */
-    height: auto; /* Allow the height of the images to adjust automatically */
-} 
-
-
+/* Second, Third, Fourth Carousel Container */
+.second-carousel-container,
+.third-carousel-container,
 .fourth-carousel-container {
-    margin-top: 20px; /* Add space between the first carousel and the second carousel */
-    display: flex;
-    justify-content: center; /* Center the carousel horizontally */
-    align-items: center;
-    width: 20%; /* Adjust width as needed */
-    margin-left: auto; /* Auto margin on left and right to center horizontally */
-    margin-right: auto;
+    width: 40%; /* Adjust the width of the carousel container */
+    margin-top: 5px; /* Reduce the spacing between carousels */
+    margin-bottom: 3px; /* Reduce the spacing between carousels */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    position: relative; /* Ensure the containers are positioned relative to the body */
 }
 
-#fourth-image-carousel .splide__track {
-    width: 100%; /* Adjust width as needed */
-}
 
+/* Second, Third, Fourth Carousel Slide */
+#second-image-carousel .splide__slide img,
+#third-image-carousel .splide__slide img,
 #fourth-image-carousel .splide__slide img {
-    width: 100%; /* Set the width of the carousel images to 100% */
-    height: auto; /* Allow the height of the images to adjust automatically */
-} 
-
-
-
-
-@media (max-width: 580px) {
-    #mobile-menu-button {
-        display: block;
-    }
-
-    .display-none-mobile {
-        display: none;
-    }
-
-    #main-menu {
-        flex-direction: column; 
-        width: 100%;
-    }
-
-    .dropdown-menu {
-        display: block; 
-        position: relative; 
-    }
+    max-width: 100%; /* Ensure the images fit within their containers */
+    height: auto;
+    width: 100%; /* Adjust the width of the images */
 }
-

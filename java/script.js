@@ -30,29 +30,9 @@ $("#mobile-menu-button").click(function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize the first carousel
-    new Splide('#image-carousel', {
-        type: 'loop' // You can add additional options here
-    }).mount();
-
-    // Initialize the second carousel
-    new Splide('#second-image-carousel', {
-        type: 'loop' // You can add additional options here
-    }).mount();
-    
+    // Initialize Splide carousels
+    new Splide('#image-carousel', { type: 'loop' }).mount();
+    new Splide('#second-image-carousel', { type: 'loop' }).mount();
+    new Splide('#third-image-carousel', { type: 'loop' }).mount();
+    new Splide('#fourth-image-carousel', { type: 'loop' }).mount();
 });
-
-// Initialize the third carousel
-document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#third-image-carousel', {
-        type: 'loop'
-    }).mount();
-});
-
-// Initialize the fourth carousel
-document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#fourth-image-carousel', {
-        type: 'loop'
-    }).mount();
-});
-
