@@ -42,3 +42,17 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
+// Initialize the third carousel
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#third-image-carousel', {
+        type: 'loop'
+    }).mount();
+});
+
+// Initialize the fourth carousel
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#fourth-image-carousel', {
+        type: 'loop'
+    }).mount();
+});
+

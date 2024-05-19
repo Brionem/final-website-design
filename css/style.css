@@ -203,6 +203,48 @@ button {
 } 
 
 
+.third-carousel-container {
+    margin-top: 20px; /* Add space between the first carousel and the second carousel */
+    display: flex;
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center;
+    width: 20%; /* Adjust width as needed */
+    margin-left: auto; /* Auto margin on left and right to center horizontally */
+    margin-right: auto;
+}
+
+#third-image-carousel .splide__track {
+    width: 100%; /* Adjust width as needed */
+}
+
+#third-image-carousel .splide__slide img {
+    width: 100%; /* Set the width of the carousel images to 100% */
+    height: auto; /* Allow the height of the images to adjust automatically */
+} 
+
+
+.fourth-carousel-container {
+    margin-top: 20px; /* Add space between the first carousel and the second carousel */
+    display: flex;
+    justify-content: center; /* Center the carousel horizontally */
+    align-items: center;
+    width: 20%; /* Adjust width as needed */
+    margin-left: auto; /* Auto margin on left and right to center horizontally */
+    margin-right: auto;
+}
+
+#fourth-image-carousel .splide__track {
+    width: 100%; /* Adjust width as needed */
+}
+
+#fourth-image-carousel .splide__slide img {
+    width: 100%; /* Set the width of the carousel images to 100% */
+    height: auto; /* Allow the height of the images to adjust automatically */
+} 
+
+
+
+
 @media (max-width: 580px) {
     #mobile-menu-button {
         display: block;

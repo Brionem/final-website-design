@@ -104,6 +104,62 @@
             </div>
         </section>
     </div>
+
+    <!-- Third Carousel -->
+    <div class="third-carousel-container">
+        <section id="third-image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="Images/3slide-carousel(1).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/3slide-carousel(2).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/3slide-carousel(3).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/3slide-carousel(4).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/3slide-carousel(5).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/3slide-carousel(6).jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Fourth Carousel -->
+    <div class="fourth-carousel-container">
+        <section id="fourth-image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="Images/4slide-carousel(1).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/4slide-carousel(2).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/4slide-carousel(3).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/4slide-carousel(4).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/4slide-carousel(5).jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Images/4slide-carousel(6).jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
   
     <!--splide-->   
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -121,13 +177,29 @@
         } );
     </script>
 
-<script>
-    document.addEventListener( 'DOMContentLoaded', function () {
-      new Splide( '#second-image-carousel', {
-    type: 'loop'
-    } ).mount();
-    } );
-</script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#second-image-carousel', {
+        type: 'loop'
+        } ).mount();
+        } );
+    </script>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#third-image-carousel', {
+        type: 'loop'
+        } ).mount();
+        } );
+    </script>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#fourth-image-carousel', {
+        type: 'loop'
+        } ).mount();
+        } );
+    </script>
+
 </body>
 </html>
-
